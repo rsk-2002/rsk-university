@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+:root {
+  --white: #e1e1e1;
+  --black: #2e2e38;
+  --navy-blue: #003060;
+  --blue: #055C9D;
+  --blue-grotto: #0E86D4;
+  --baby-blue: #68BBE3;
+  --transition: all 0.3s linear;
+}
+
+/* nav css  */
+nav {
+  width: 100%;
+  background-color: var(--blue);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 33;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 1.5rem;
+}
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+  transition: var(--transition);
+}
+nav ul li a:hover {
+  color: var(--white);
+}
+ul li .active {
+  color: var(--white);
+}
+
+/* Chat Box CSS */
+.chat-bot {
+  cursor: pointer;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+/* Main Section CSS */
+
+
+.header-image img {
+  width: 100%;
+}
+.header-image .header-details {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header-details h1 {
+  font-size: 4rem;
+  color: var(--navy-blue);
+}
+.header-details p {
+  font-size: 1.3rem;
+  line-height: 4rem;
+  color: var(--blue-grotto);
+}
+.apply-btn {
+  background-color: var(--navy-blue);
+  color: var(--white);
+  padding: 1rem 2rem;
+  font-size: 18px;
+  font-weight: lighter;
+}
+.apply-btn:hover {
+  opacity: 0.8;
+}
+
+/* Reusable Classes */
+
+.heading {
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0 2rem 0;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.sub-heading {
+  margin: 1rem 0 2rem;
+  color: var(--blue-grotto);
+}
+
+.container {
+  width: 80%;
+  margin: 5rem auto;
+}
+
+
+
+/* Programs Section CSS */
+
+
+.program-section .heading {
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.program-card {
+  border-right: 2px solid var(--baby-blue);
+  border-bottom: 2px solid var(--baby-blue);
+  padding: 1rem;
+  text-align: center;
+}
+.program-card h3 {
+  color: var(--navy-blue);
+  font-size: 25px;
+  line-height: 2rem;
+  text-transform: uppercase;
+}
+.program-card img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+.program-card p {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 2rem;
+  color: var(--blue);
+}
+.program-card button {
+  display: inline;
+  border: none;
+  padding: 1rem 2rem;
+  background-color: var(--baby-blue);
+  color: var(--navy-blue);
+  font-size: 15px;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.program-card button:hover {
+  opacity: 0.8;
+}
+.program-card a {
+  display: block;
+  font-weight: lighter;
+  text-decoration: underline;
+  color: var(--navy-blue);
+}
+
+/* Reasong Why Section CSS */
+.reason-section .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.why-card {
+    background-color: var(--hover);
+    text-align: center;
+}
+.why-card img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.why-card h3 {
+    font-size: 25px;
+    color: var(--navy-blue);
+}
+.why-card p {
+  font-size: 1rem;
+  padding: 1rem;
+  line-height: 2rem;
+  color: var(--navy-blue);
+}
+
+/* Our Alumni Section */
+
+.alumni-section {
+  text-align: center;
+}
+.alumni-section img {
+  width: 100%;
+}
+
+
+
+/* Find Out More Section CSS */
+
+
+
+.find-more-section .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.grid-3 {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-3 .card img {
+    width: 100%;
+}
+
+
+
+/* Contact Section CSS */
+.contact-section {
+  margin-top: 5rem;
+}
+form {
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  color: var(--blue-grotto);
+  font-weight: bold;
+}
+form input,
+form label,
+form textarea {
+  padding: 0.5rem;
+  outline: none;
+}
+form input,
+form textarea {
+  border: 2px solid var(--baby-blue);
+  border-radius: 5px;
+}
+form input:focus,
+form textarea:focus {
+  border: 2px solid var(--blue-grotto);
+}
+form input[type="submit"] {
+  margin-top: 1rem;
+}
+
+/* Footer CSS */
+
+
+footer {
+  margin-top: 3rem;
+  background-color: var(--navy-blue);
+  padding: 3rem;
+}
+footer .grid-3 {
+  width: 70%;
+
+  margin: 0 auto;
+}
+.links h3 {
+  color: var(--white);
+  font-weight: lighter;
+  font-size: 25px;
+}
+.links a {
+  display: block;
+  font-size: 20px;
+  color: var(--white);
+}
+.links a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin-top: 3rem;
+  text-align: center;
+  color: var(--white);
+}
+
+
+
+
+/* MEDIA QUERY CSS */
+
+
+
+@media (max-width:1440px) {
+  .header-image .header-details {
+    top: 20%;
+  }
+  .header-details h1 {
+    font-size: 5rem;
+  }
+}
+@media (max-width:1024px) {
+  .header-details h1 {
+    font-size: 4rem;
+  }
+  .header-image .header-details {
+    top: 15%;
+  }
+}
+
+
+@media (max-width:768px) {
+  nav ul li {
+    flex-wrap: wrap;
+  }
+  nav ul li {
+    padding: 1rem;
+  }
+  nav ul li a {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  .apply-btn {
+    padding: 0.5rem 1rem;
+  }
+  .header-details p {
+    line-height: 3rem;
+  }
+  .grid-4, .grid-3, .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .find-more-section .grid-3 {
+    grid-template-columns: repeat(3,1fr);
+  }
+  .header-image img {
+    height: 40vh;
+  }
+  .chat-bot {
+    right: 30px;
+    bottom: 20px;
+  }
+  .chat-bot img {
+    width: 200px;
+  }
+  .links h4 {
+    font-size: 1.7rem;
+  }
+  .links a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:430px) {
+  nav ul {
+    flex-wrap: wrap;
+  }
+  .grid-4, .grid-3, .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  header {
+    height: 40vh;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+  .header-image img {
+    height: 40vh;
+    overflow: hidden;
+  }
+  .header-image .header-details {
+    align-items: center;
+  }
+  .header-details h1 {
+    font-size: 2.5rem;
+  }
+  .chat-bot {
+    right: -80px;
+    bottom: 20px;
+  }
+  .chat-bot img {
+    width: 80px;
+  }
+  .why-card h3 {
+    font-size: 1.6rem;
+  }
+  footer .grid-3 {
+    text-align: center;
+  }
+}

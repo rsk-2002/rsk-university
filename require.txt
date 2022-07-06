@@ -1,0 +1,10 @@
+You have to create a single page of the Online Education Website using any
+preferred language you want. You have to only code the front-end part,
+no back-end code is needed.
+
+Ex. Navbar, Header section, Services/Features, Courses, FAQ, Contact, Footer, etc.
+
+
+Single Page Online Education Website ✔
+Only Front-End Code (Any Language) ✔
+Make it responsive on all devices ✔
