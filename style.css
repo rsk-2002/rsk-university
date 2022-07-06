@@ -163,7 +163,7 @@ ul li .active {
 .program-card button {
   display: inline;
   border: none;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.5rem;
   background-color: var(--baby-blue);
   color: var(--navy-blue);
   font-size: 15px;
@@ -371,7 +371,14 @@ footer p {
   nav ul {
     flex-wrap: wrap;
   }
+  nav ul li {
+    padding: 0.5rem;
+  }
   .grid-4, .grid-3, .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .find-more-section .grid-3 {
     grid-template-columns: 1fr;
   }
   header {
@@ -386,9 +393,13 @@ footer p {
   }
   .header-image .header-details {
     align-items: center;
+    top: 20%;
   }
   .header-details h1 {
     font-size: 2.5rem;
+  }
+  .program-card button {
+    padding: .5rem 1rem;
   }
   .chat-bot {
     right: -80px;
